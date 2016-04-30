@@ -1,0 +1,6 @@
+---
+- name: Setup timezone
+  hosts: all
+  become: true
+  roles:
+    - { role: manala.timezone }
