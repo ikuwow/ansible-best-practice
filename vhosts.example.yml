@@ -1,0 +1,9 @@
+---
+apache_user: 'vagrant'
+vhosts:
+    - server_name: 'example.com'
+      vhost_home: '/vagrant/www/example.com'
+      use_ssl: false
+    # - server_name: 'example.com'
+    # - vhost_home: '/vagrant/www/example.com'
+    # - use_ssl: true

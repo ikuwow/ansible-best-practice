@@ -1,0 +1,14 @@
+---
+- name: Remove seEXEC
+  hosts: all
+  become: true
+  tasks:
+      - file: path=/usr/sbin/suexec state=absent
+
+- name: Setup apache and vhosts
+  hosts: all
+  vars_files:
+      - vhosts.yml
+  become: true
+  roles:
+    - role: genzouw.apache-vhosts

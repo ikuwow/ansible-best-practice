@@ -1,1 +1,5 @@
+/www
 /.vagrant
+/vhosts.yml
+
+!.gitkeep

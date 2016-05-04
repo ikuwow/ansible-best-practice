@@ -1,6 +1,8 @@
 ---
-- name: Setup timezone
+- name: Setup timezone etc
   hosts: all
   become: true
   roles:
-    - { role: supercoder.server-time }
+    - role: supercoder.server-time
+    - role: tkimball83.selinux
+      selinux_state: disabled
