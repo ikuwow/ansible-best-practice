@@ -3,4 +3,4 @@
   hosts: all
   become: true
   roles:
-    - { role: manala.timezone }
+    - { role: supercoder.server-time }
